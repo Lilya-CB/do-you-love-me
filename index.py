@@ -17,7 +17,6 @@ from flask import render_template
 from flask import g
 from flask import request
 import random
-from .database import Database
 
 app = Flask(__name__, static_url_path="", static_folder="static")
 
@@ -30,9 +29,7 @@ def close_connection(exception):
 
 @app.route('/')
 def index():
-    database = Database()
-    liste_animaux = random.sample(get_db().get_animaux(), k=5)
-    return render_template('index.html', liste_animaux=liste_animaux)
+    return render_template('index.html')
 
 
 @app.errorhandler(404)
