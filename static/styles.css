@@ -1,0 +1,114 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.lilzfleur {
+    color: rgb(200, 126, 188);
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    background-color: rgb(234, 188, 226, 0.5);
+}
+
+footer {
+    background-color: rgb(200, 126, 188);
+    padding: 8px;
+}
+
+
+.entete-index {
+    font-size: .8em;
+    color: black;
+    margin: auto;
+}
+
+/* ------- DÉBUT : page Accueil ------- */
+
+.header-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: stretch;
+    align-items: center;
+    margin: 5px;
+    padding: 2%;
+}
+
+.header-title-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.header-title-format{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+/* ------- FIN : page Accueil ------- */
+
+/* ------- DÉBUT : page 404 ------- */
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.page-err {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: stretch;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.entete-404 {
+    margin: 25px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.photo-err img {
+    width: 100%;
+}
+.message-404 {
+    margin-bottom: 7%;
+}
+
+.message-404 h2 {
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.message-404 a {
+    color: rgb(147, 24, 118);
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.message-404 a:hover {
+    color: #000;
+    background-color: rgb(200, 126, 188);
+}
+
+/* ------- FIN : page 404 ------- */
+
