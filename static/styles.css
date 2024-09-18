@@ -20,11 +20,36 @@ footer {
     padding: 8px;
 }
 
+.entete {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: stretch;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: stretch;
+    align-items: center;
+    padding: 5em;
+}
 
 .entete-index {
-    font-size: .8em;
+    font-size: 1em;
     color: black;
     margin: auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+
 }
 
 /* ------- DÉBUT : page Accueil ------- */
@@ -54,6 +79,17 @@ footer {
     gap: 15px;
 }
 
+button {    
+    background-color: rgb(200, 126, 188);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2em;
+    width: 4em;
+}
 
 
 /* ------- FIN : page Accueil ------- */
