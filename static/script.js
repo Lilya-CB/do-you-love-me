@@ -10,6 +10,9 @@ const moveNoButton = () => {
   noButton.style.top = `${y}px`;
 }
 
+yesButton.addEventListener('click', () => {
+  window.location.href = '/yes';
+})
 
 noButton.addEventListener('click', moveNoButton);
 noButton.addEventListener('mouseenter', moveNoButton);
