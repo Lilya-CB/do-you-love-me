@@ -18,6 +18,10 @@ body {
 footer {
     background-color: rgb(200, 126, 188);
     padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .entete {
@@ -91,6 +95,10 @@ button {
     width: 4em;
 }
 
+button:hover {
+    background-color: rgb(147, 24, 118);
+}
+
 
 /* ------- FIN : page Accueil ------- */
 
@@ -128,7 +136,7 @@ img {
 .message-404 h2 {
     text-decoration: none;
     text-align: center;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255);
     border-radius: 6px;
     padding: 4px;
 }
@@ -136,7 +144,7 @@ img {
 .message-404 a {
     color: rgb(147, 24, 118);
     text-decoration: none;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255);
     border-radius: 6px;
     padding: 4px;
 }
