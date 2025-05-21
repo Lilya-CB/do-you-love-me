@@ -20,12 +20,6 @@ import random
 
 app = Flask(__name__, static_url_path="", static_folder="static")
 
-@app.teardown_appcontext
-def close_connection(exception):
-    db = getattr(g, '_database', None)
-    if db is not None:
-        db.disconnect()
-
 
 @app.route('/')
 def index():
@@ -35,6 +29,11 @@ def index():
 @app.route('/yes', methods=['POST'])
 def yes():
     return render_template('yes.html')
+
+
+@app.route('/no', methods=['POST'])
+def no():
+    return render_template('no.html')    
 
 
 @app.errorhandler(404)
